@@ -7,7 +7,7 @@ import SobreMim from './components/SobreMim';
 const Container = styled.div`
   max-width: 1440px;
   margin: 0 auto;
-  padding: 0 2%;
+  padding: 0 40px;
   position: relative;
   z-index: 1;
 `

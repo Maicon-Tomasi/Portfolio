@@ -3,8 +3,14 @@ import TituloSubtitulo from "../TItuloSubtitulo"
 
 const DivInformacoes = styled.div`
     display: flex;
-    gap: 250px;
+    gap: 100px;
     align-items: center;
+
+    @media screen and (max-width: 1000px){
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
 `
 
 const DivTexto = styled.div`
@@ -33,13 +39,31 @@ const DivTexto = styled.div`
 `
 
 const DivExperiência = styled.div`
+    width: 100%;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-right: 40px;
+
+    @media screen and (max-width: 1000px){
+        padding: 0;
+    }
+    
 `
 
 const SpanNumero = styled.span`
-    padding: 15px;
-    font-size: 60px;
+    font-size: 80px;
+    margin-bottom: 15px;
+    border-bottom: 4px solid aqua;
+    color: #4c4d4d;
+`
+
+const SpanAnosExperiencia = styled.span`
+    font-size: 27px;
+    font-weight: 500;
+    text-align: center;
+    white-space: nowrap;
 `
 
 const SobreMim = () => {
@@ -56,8 +80,8 @@ const SobreMim = () => {
                 </DivTexto>
 
                 <DivExperiência>
-                    <SpanNumero>22</SpanNumero> <br />
-                    <span>6 meses</span>
+                    <SpanNumero>22</SpanNumero>
+                    <SpanAnosExperiencia>Meses De <b>Experiência</b></SpanAnosExperiencia>
                 </DivExperiência>
             </DivInformacoes>
         </>
