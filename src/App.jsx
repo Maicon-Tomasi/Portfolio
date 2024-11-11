@@ -1,8 +1,8 @@
 import styled from 'styled-components'
-import './App.css'
 import EstilosGlobais from './components/EstilosGlobais'
 import Menu from './components/Menu/Menu'
 import Banner from './components/Banner/Banner';
+import SobreMim from './components/SobreMim';
 
 const Container = styled.div`
   max-width: 1440px;
@@ -25,6 +25,9 @@ function App() {
     <div>
       <EstilosGlobais />
       <Banner />
+      <Container>
+        <SobreMim />  
+      </Container>
       
     </div>
   )

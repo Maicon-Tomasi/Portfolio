@@ -1,5 +1,5 @@
 import { useRef, useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaGithub, FaInstagram, FaLinkedin, FaTimes, FaWhatsapp } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import styled from "styled-components";
 import { CSSTransition } from 'react-transition-group'; 
@@ -41,6 +41,7 @@ const ContainerMenuOverlay = styled.div`
      display: flex;
      align-items: center;
      justify-content: center;
+     flex-direction: column;
      color: white;
      opacity: 0; /* Começa invisível */
      transform: translateY(-100%); /* Começa fora da tela */
@@ -93,6 +94,13 @@ const CloseButton = styled.div`
      font-size: 30px;
 `
 
+const DiviIcons = styled.div`
+     width: 100%;
+     max-width: 200px;
+     display: flex;
+     justify-content: space-between;
+`
+
 const Menu = () => {
      const [menu, setMenu] = useState(false);
      const nodeRef = useRef(null);
@@ -129,6 +137,13 @@ const Menu = () => {
                               <li>Portfolio</li>
                               <li>Contato</li>
                          </MenuList>
+                         <DiviIcons>
+                              <FaInstagram size={30}/>
+                              <FaWhatsapp size={30} />
+                              <FaGithub size={30}/>
+                              <FaLinkedin size={30}/>
+                         </DiviIcons>
+
                     </ContainerMenuOverlay>
                </CSSTransition>
           </div>

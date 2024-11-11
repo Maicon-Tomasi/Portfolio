@@ -31,9 +31,10 @@ const SectionEstilizado = styled.section`
      color: white;
      justify-content: center;
      align-items: center;
-     margin-top: 250px;
+     margin-top: 180px;
      padding: 20px; 
-     z-index: 1;
+     position: relative; /* Adicionei essa linha */
+     z-index: 1; /* Garante que o conteúdo ficará acima do overlay */
 
      h1 {
           text-align: center;
@@ -63,6 +64,7 @@ const SectionEstilizado = styled.section`
           }
      }
 `;
+
 
 const SpanEstilizado = styled.span`
      font-size: 90px;
