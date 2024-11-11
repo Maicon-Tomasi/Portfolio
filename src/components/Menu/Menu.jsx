@@ -27,6 +27,10 @@ const BoxMenu = styled.div`
           text-decoration: none;
           margin-right: 25px;
           font-size: 20px;
+
+          @media (max-width: 500px) {
+               display: none;
+          }
      }
 `
 

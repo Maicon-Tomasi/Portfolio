@@ -63,6 +63,10 @@ const SectionEstilizado = styled.section`
                font-size: 1rem;
           }
      }
+
+     @media (max-height: 650px){
+          margin-top: 70px;
+     }
 `;
 
 
