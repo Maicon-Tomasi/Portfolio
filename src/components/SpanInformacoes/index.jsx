@@ -4,6 +4,7 @@ const DivInfo = styled.div`
     display: flex;
     flex-direction: column;
     margin-right:100px;
+    margin-bottom: 20px;
 
     label{
         color: #6c757d;
@@ -15,6 +16,8 @@ const DivInfo = styled.div`
         font-weight: 600;
         font-size: 18px;
     }
+
+
 `
 
 const SpanInformacoes = ({label, span}) =>{
