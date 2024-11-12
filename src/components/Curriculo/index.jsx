@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import TituloSubtitulo from "../TItuloSubtitulo"
 import BoxInformacoes from "../BoxInfo";
+import Habilidades from "../Habilidades";
 
 const ContainerCurriculo = styled.div`
      display: flex;
@@ -11,6 +12,11 @@ const ContainerCurriculo = styled.div`
           color: #212529;
           font-size: 30px;
           margin-left: 20px;
+          font-weight: 600;
+     }
+
+     @media (max-width: 1000px) {
+          flex-direction: column;
      }
 `
 
@@ -19,9 +25,24 @@ const CardsCurriculo = styled.div`
      max-width: 600px;
      display: flex;
      flex-direction: column;
-     padding: 0 15px;
+     padding: 0 10px;
      border-left: 2px solid aqua;
      
+`
+
+const BotaoEstilizado = styled.button`
+     width: 200px;
+     background-color: white;
+     padding: 10px;
+     border: 2px solid black;
+     font-weight: 500;
+     transition: 1s;
+     cursor: pointer;
+
+     :hover {
+          background-color: black;
+          color: white;
+     }
 `
 
 
@@ -60,6 +81,15 @@ const Curriculo = () => {
                          </CardsCurriculo>
                     </div>
                </ContainerCurriculo>
+
+               <Habilidades />
+
+
+               <div style={{textAlign: 'center', paddingBottom: '65px'}}>
+                    <a href="/public/Curriculo-MaiconTomasi.pdf" download>
+                         <BotaoEstilizado>Dowload CV</BotaoEstilizado>
+                    </a>
+               </div>
 
           </>
 

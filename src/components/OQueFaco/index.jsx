@@ -7,6 +7,10 @@ const ContainerOQueFaco = styled.div`
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
+
+     @media (max-width: 1000px){
+          justify-content: center;
+     }
 `
 
 
