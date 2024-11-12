@@ -3,8 +3,8 @@ import TituloSubtitulo from "../TItuloSubtitulo"
 
 const DivInformacoes = styled.div`
     display: flex;
-    gap: 100px;
     align-items: center;
+    justify-content: space-between;
 
     @media screen and (max-width: 1000px){
         justify-content: center;
@@ -15,14 +15,16 @@ const DivInformacoes = styled.div`
 
 const DivTexto = styled.div`
     width: 100%;
-    max-width: 800px;
+    max-width:900px;
     display: flex;
     flex-direction: column;
+    color: #212529;
 
     h2{
         font-weight: 400;
         font-size: 26px;
         margin-bottom: -6px;
+        
     }
 
     span{
@@ -31,7 +33,7 @@ const DivTexto = styled.div`
     }
 
     p{
-        font-size: 21px;
+        font-size: 22px;
         font-weight: 300;
         text-align: justify;
     }
@@ -45,6 +47,8 @@ const DivExperiência = styled.div`
     flex-direction: column;
     align-items: center;
     padding-right: 40px;
+    color: #212529;
+    
 
     @media screen and (max-width: 1000px){
         padding: 0;
@@ -53,10 +57,12 @@ const DivExperiência = styled.div`
 `
 
 const SpanNumero = styled.span`
-    font-size: 80px;
+    font-size: 180px;
+    font-weight: 600;
     margin-bottom: 15px;
     border-bottom: 4px solid aqua;
     color: #4c4d4d;
+    
 `
 
 const SpanAnosExperiencia = styled.span`
@@ -80,8 +86,8 @@ const SobreMim = () => {
                 </DivTexto>
 
                 <DivExperiência>
-                    <SpanNumero>22</SpanNumero>
-                    <SpanAnosExperiencia>Meses De <b>Experiência</b></SpanAnosExperiencia>
+                    <SpanNumero>01</SpanNumero>
+                    <SpanAnosExperiencia>Ano De <b>Experiência</b></SpanAnosExperiencia>
                 </DivExperiência>
             </DivInformacoes>
         </>

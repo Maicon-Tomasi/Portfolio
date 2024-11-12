@@ -5,7 +5,8 @@ const ContainerTexto = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 130px;
+    color: #212529;
 `
 const SpanEstilziado = styled.span`
     background-color: aqua;
@@ -13,15 +14,15 @@ const SpanEstilziado = styled.span`
     font-size: 16px;
 `
 const SubtituloEstilizado = styled.h1`
-    color: black;
     font-weight: 600;
+    font-size: 45px;
 `
 
 const TituloSubtitulo = ({titulo, subtitulo}) =>{
     return(
         <ContainerTexto>
             <SpanEstilziado>{titulo}</SpanEstilziado>
-            <h1>{subtitulo}</h1>
+            <SubtituloEstilizado>{subtitulo}</SubtituloEstilizado>
         </ContainerTexto>
     )
 }

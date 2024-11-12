@@ -5,7 +5,8 @@ const SectionInformacoesEstilizada = styled.section`
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin: 30px 0;
+    margin: 50px 0;
+    color: #212529;
 `
 
 const Informacoes = () =>{
