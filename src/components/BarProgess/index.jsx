@@ -12,6 +12,14 @@ const BoxProgresEstilizado = styled.div`
         font-size: 18px;
         margin-bottom: 10px;
     }
+
+    @media (max-width: 1400px){
+        max-width: 400px;
+    }
+
+    @media (max-width: 960px){
+        max-width: 800px;
+    }
 `
 
 const ProgressEstilizado = styled.progress`

@@ -3,11 +3,25 @@ import TituloSubtitulo from "../TItuloSubtitulo"
 import BoxProgres from "../BarProgess";
 
 const ContainerSkills = styled.div`
-    padding: 0 50px;
+    padding: 0 0 60px 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 60px;
+
+    h2{
+        padding: 0 50px;
+    }
+
+    @media (max-width: 500px){
+        padding: 0 0 60px 2%;
+
+        h2{
+            padding: 0 0 60px 2%;
+        }
+
+    }
+    
+
 `
 
 
@@ -15,7 +29,7 @@ const Habilidades = () =>{
 
     return(
         <>
-            <h2 style={{padding: '0 50px', color: '#212529', fontSize: '30px', marginBottom: '-8px', fontWeight: '600'}}>My Skills</h2>
+            <h2 style={{marginLeft: '50px',color: '#212529', fontSize: '30px', marginBottom: '-8px', fontWeight: '600'}}>My Skills</h2>
             <ContainerSkills>
                 <BoxProgres skill="HTML" porcentagem="100%" value="100" />
                 <BoxProgres skill="CSS" porcentagem="85%" value="85" />
