@@ -3,10 +3,10 @@ import TituloSubtitulo from "../TItuloSubtitulo"
 import BoxProgres from "../BarProgess";
 
 const ContainerSkills = styled.div`
-    padding: 0 0 60px 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 60px;
 
     h2{
         padding: 0 50px;

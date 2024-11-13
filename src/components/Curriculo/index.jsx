@@ -85,7 +85,7 @@ const Curriculo = () => {
                <Habilidades />
 
 
-               <div style={{textAlign: 'center', paddingBottom: '65px'}}>
+               <div style={{textAlign: 'center', paddingBottom: '20px'}}>
                     <a href="/public/Curriculo-MaiconTomasi.pdf" download>
                          <BotaoEstilizado>Dowload CV</BotaoEstilizado>
                     </a>
