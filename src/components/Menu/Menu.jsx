@@ -1,4 +1,5 @@
 import { useRef, useState } from "react";
+import { useTranslation } from 'react-i18next';
 import { FaBars, FaGithub, FaInstagram, FaLinkedin, FaTimes, FaWhatsapp } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
 import styled from "styled-components";
@@ -104,21 +105,45 @@ const DiviIcons = styled.div`
      display: flex;
      justify-content: space-between;
 `
+const SelectEstilizado = styled.select`
+     margin-right: 15px;
+     background: transparent;
+     color: white;
+     border-radius: 5px;
 
+     option{
+          color: black;
+     }
+
+     @media (max-width: 400px){
+          margin-right: 8px;
+     }
+
+`
 const Menu = () => {
      const [menu, setMenu] = useState(false);
      const nodeRef = useRef(null);
+     const { t, i18n } = useTranslation();
 
      function abreFechaMenu() {
           setMenu(!menu);
      }
 
+     const handleLanguageChange = (event) => {
+          const selectedLanguage = event.target.value;
+          i18n.changeLanguage(selectedLanguage);
+        };
      return (
+          
           <div>
                <ContainerInfo>
                     <h1>Maicon Tomasi</h1>
                     <BoxMenu>
                          <a href=""><FaPhone /> (66) 99698-9912</a>
+                         <SelectEstilizado onChange={handleLanguageChange} defaultValue={i18n.language}>
+                              <option value="pt">Pt</option>
+                              <option value="en">En</option>
+                         </SelectEstilizado>
                          <FaBars onClick={abreFechaMenu} color="white" size={25} style={{ display: menu ? "none" : "block" }} />
                     </BoxMenu>
                </ContainerInfo>

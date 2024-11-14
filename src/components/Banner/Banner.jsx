@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import TypeIt from 'typeit-react';
+import { useTranslation } from 'react-i18next';
 import BannerImage from '../../assets/Banner.jpg';
 import Menu from "../Menu/Menu";
 
@@ -97,7 +98,7 @@ const CampoBotao = styled.div`
 `;
 
 const BotaoEstilizado = styled.button`
-     width: 200px;
+     width: 250px;
      padding: 15px;
      background-color: aqua;
      border: 0;
@@ -117,11 +118,13 @@ const BotaoEstilizado = styled.button`
 `;
 
 const Banner = () => {
+
+     const { t } = useTranslation();
      return (
           <Background>
                <Menu />
                <SectionEstilizado>
-                    <h1>HI, I'M A DEVELOPER</h1>
+                    <h1>{t('developer')}</h1>
                     <div style={{ width: '100%', textAlign: 'center' }}>
                          <SpanEstilizado>
                               <TypeIt
@@ -135,9 +138,9 @@ const Banner = () => {
                               />
                          </SpanEstilizado>
                     </div>
-                    <h3>Based in Campo Grande - MS, Brazil</h3>
+                    <h3>{t('location')}</h3>
                     <CampoBotao>
-                         <BotaoEstilizado>View My Works</BotaoEstilizado>
+                         <BotaoEstilizado>{t('button')}</BotaoEstilizado>
                     </CampoBotao>
                </SectionEstilizado>
           </Background>
