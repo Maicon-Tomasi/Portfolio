@@ -1,14 +1,28 @@
 import { useState } from "react";
-import { BsDisplay } from "react-icons/bs";
 import TituloSubtitulo from "../TItuloSubtitulo";
 import styled from "styled-components";
+import BoxProjetos from "./BoxProjetos";
+import { FaCss3, FaHtml5, FaJs } from "react-icons/fa";
+
 
 const DivFiltroProjetos = styled.div`
     display: flex;
     justify-content: center;
     gap: 40px;
     margin: 40px 0;
+
+    @media (max-width: 500px){
+        gap: 10px;
+    }
 `;
+
+const DivGaleriaProjetos = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 100px;
+`
 
 const LabelEstilizada = styled.label`
     cursor: pointer;
@@ -30,6 +44,35 @@ const Projetos = () => {
         setSelectedFilter(filter);
     };
 
+    const arrayProjetos = [
+        {
+            icone: <FaCss3 size={50} color="aqua" />, 
+            nomeCategoria:"Front-End", 
+            img: "/imagesProjetos/PortfolioImg.png",
+            video: "/videos/videoPortfolio.mp4",
+            descricao: "Deserunt enim magna velit pariatur ad. Mollit nostrud veniam culpa nisi laboris pariatur fugiat ipsum dolore tempor nostrud aliquip dolor exercitation. Excepteur eiusmod dolore commodo tempor amet. Aliqua do deserunt occaecat cillum nulla ipsum pariatur eiusmod Lorem est do ad culpa. Duis reprehenderit voluptate ad sunt laborum ex et enim reprehenderit dolor. Ipsum tempor ullamco consectetur excepteur incididunt est aliqua ipsum. Adipisicing esse mollit laboris laboris eiusmod sint officia magna ut ut nostrud sint irure.",
+            tecnologias: [
+                <FaHtml5 size={30} color="orange" />,
+                <FaCss3 size={30} color="aqua" />,
+                <FaJs size={30} color="yellow" />
+            ],
+        },
+        {
+            icone: <FaCss3 size={50} color="aqua" />, 
+            nomeCategoria:"Front-End", 
+            img: "/imagesProjetos/PortfolioImg.png",
+            video: "/videos/videoPortfolio.mp4",
+            descricao: "Deserunt enim magna velit pariatur ad. Mollit nostrud veniam culpa nisi laboris pariatur fugiat ipsum dolore tempor nostrud aliquip dolor exercitation. Excepteur eiusmod dolore commodo tempor amet. Aliqua do deserunt occaecat cillum nulla ipsum pariatur eiusmod Lorem est do ad culpa. Duis reprehenderit voluptate ad sunt laborum ex et enim reprehenderit dolor. Ipsum tempor ullamco consectetur excepteur incididunt est aliqua ipsum. Adipisicing esse mollit laboris laboris eiusmod sint officia magna ut ut nostrud sint irure.",
+        },
+        {
+            icone: <FaCss3 size={50} color="aqua" />, 
+            nomeCategoria:"Front-End", 
+            img: "/imagesProjetos/PortfolioImg.png",
+            video: "/videos/videoPortfolio.mp4",
+            descricao: "Deserunt enim magna velit pariatur ad. Mollit nostrud veniam culpa nisi laboris pariatur fugiat ipsum dolore tempor nostrud aliquip dolor exercitation. Excepteur eiusmod dolore commodo tempor amet. Aliqua do deserunt occaecat cillum nulla ipsum pariatur eiusmod Lorem est do ad culpa. Duis reprehenderit voluptate ad sunt laborum ex et enim reprehenderit dolor. Ipsum tempor ullamco consectetur excepteur incididunt est aliqua ipsum. Adipisicing esse mollit laboris laboris eiusmod sint officia magna ut ut nostrud sint irure.",
+        },
+    ]
+
     return (
         <>
             <TituloSubtitulo titulo="Projects" subtitulo="Some of my recent projects" />
@@ -48,8 +91,17 @@ const Projetos = () => {
 
 
             <DivGaleriaProjetos>
-                
+                {arrayProjetos.map((projeto) => (
+                    <BoxProjetos 
+                        icone={projeto.icone} 
+                        nomeCategoria={projeto.nomeCategoria} 
+                        img={projeto.img}
+                        descricao={projeto.descricao}
+                        video={projeto.video}
+                    />
+                ))}
             </DivGaleriaProjetos>
+        
         </>
     );
 };

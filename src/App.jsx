@@ -6,6 +6,7 @@ import Informacoes from './components/Informacoes';
 import OQueFaco from './components/OQueFaco';
 import Curriculo from './components/Curriculo';
 import Projetos from './components/Projetos';
+import Footer from './components/Footer';
 
 const Container = styled.div`
   max-width: 1440px;
@@ -29,7 +30,6 @@ function App() {
         <Curriculo />
         <Projetos />
       </Container>
-      
     </div>
   )
 }
