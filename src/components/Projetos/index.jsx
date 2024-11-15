@@ -1,5 +1,5 @@
 import { useState } from "react";
-import TituloSubtitulo from "../TItuloSubtitulo";
+import TituloSubtitulo from "../TituloSubtitulo";
 import styled from "styled-components";
 import BoxProjetos from "./BoxProjetos";
 import { FaCss3, FaHtml5, FaJs } from "react-icons/fa";
@@ -53,14 +53,14 @@ const Projetos = () => {
             icone: <FaCss3 size={50} color="aqua" />, 
             nomeCategoria:"Front-End", 
             img: "/imagesProjetos/PortfolioImg.png",
-            video: "/videos/videoPortfolio.mp4",
+            video: "/videos/portfolio.mp4",
             descricao: t("Projetos.descricaoPortfolio"),
         },
         {
             icone: <FaCss3 size={50} color="aqua" />, 
             nomeCategoria:"Front-End", 
             img: "/imagesProjetos/AluraDevs.png",
-            video: "/videos/videoPortfolio.mp4",
+            video: "/videos/desafioAlura.mp4",
             descricao: t("Projetos.descricaoDesafioAlura"),
         }
     ]

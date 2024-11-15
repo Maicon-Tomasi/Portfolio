@@ -3,6 +3,7 @@ import TypeIt from 'typeit-react';
 import { useTranslation } from 'react-i18next';
 import BannerImage from '../../assets/Banner.jpg';
 import Menu from "../Menu/Menu";
+import { Link } from "react-scroll";
 
 
 const Background = styled.div`
@@ -140,7 +141,7 @@ const Banner = () => {
                     </div>
                     <h3>{t('location')}</h3>
                     <CampoBotao>
-                         <BotaoEstilizado>{t('button')}</BotaoEstilizado>
+                         <Link to="projetos" smooth={true} duration={500}><BotaoEstilizado>{t('button')}</BotaoEstilizado></Link>
                     </CampoBotao>
                </SectionEstilizado>
           </Background>
