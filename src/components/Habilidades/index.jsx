@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import TituloSubtitulo from "../TItuloSubtitulo"
 import BoxProgres from "../BarProgess";
+import { Element } from "react-scroll";
 
 const ContainerSkills = styled.div`
     display: flex;

@@ -1,6 +1,87 @@
-{
+  {
     "developer": "OI, EU SOU UM DESENVOLVEDOR",
     "location": "Base em Campo Grande - MS, Brasil",
-    "button": "Veja Meus Trabalhos"
+    "button": "Veja Meus Trabalhos",
+    "informacoes": {
+    "name": "Nome:",
+    "email": "Email:",
+    "birthdate": "Data de nascimento:",
+    "location": "Resido em:"
+  },
+  "spanValues": {
+    "name": "Maicon W. S. Tomasi",
+    "email": "maiconwstomasi@gmail.com",
+    "birthdate": "22/07/2005",
+    "location": "Campo Grande, MS"
+  },
+  "aboutMe": {
+    "title": "Sobre Mim",
+    "subtitle": "Saiba mais sobre mim",
+    "introduction": "Oi, eu sou o <span>{{name}}</span>",
+    "description": "Desenvolvedor Full Stack em início de carreira, com foco em JavaScript, React, TypeScript e PHP. Atualmente cursando o terceiro ano de Ciência da Computação, possuo habilidades em desenvolvimento de aplicações web, além de conhecimentos em banco de dados SQL. Tenho interesse contínuo em aprimorar minhas habilidades, especialmente em JavaScript e C#, tecnologias que venho explorando para expandir meu repertório técnico.",
+    "passion": "Embora tenha experiência inicial, já desenvolvo soluções funcionais e estou em constante busca por novos desafios para evoluir como profissional. Com um forte desejo de aprender e contribuir em projetos inovadores, estou preparado para colaborar em equipes de desenvolvimento, trazendo valor com meu conhecimento técnico e vontade de crescer.",
+    "yearsExperience": "Ano de <b>Experiência</b>"
+  },
+  "menu": {
+    "name": "Maicon Tomasi",
+    "phone": "(66) 99698-9912",
+    "home": "Ínicio",
+    "aboutMe": "Sobre Mim",
+    "whatIDo": "O que faço",
+    "resume": "Curriculo",
+    "portfolio": "Projetos",
+    "contact": "Contato"
+  },
+  "oQueFaco": {
+        "titulo": "O Que Eu Faço?",
+        "subtitulo": "Como posso ajudar no seu próximo projeto",
+        "frontEnd": {
+            "titulo": "Front-End",
+            "texto": "Desenvolvimento de interfaces interativas e responsivas, usando as melhores práticas do mercado."
+        },
+        "backEnd": {
+            "titulo": "Back-End",
+            "texto": "Construção de APIs e lógica de negócios para soluções robustas."
+        },
+        "bancoDeDados": {
+            "titulo": "Banco de Dados",
+            "texto": "Gerenciamento e design de bancos de dados eficientes."
+        },
+        "fullStack": {
+            "titulo": "Full Stack",
+            "texto": "Integração completa de front-end e back-end em sistemas escaláveis."
+        },
+        "mobile": {
+            "titulo": "Desenvolvimento Mobile",
+            "texto": "Aplicativos responsivos e otimizados para diferentes dispositivos."
+        },
+        "api": {
+            "titulo": "APIs",
+            "texto": "Desenvolvimento e integração de APIs modernas e escaláveis."
+        }
+    },
+    "curriculo": {
+      "Resume": "Currículo",
+      "Titulo": "Um Resumo do Meu Currículo",
+      "MyEducation": "Minha Educação",
+      "BachelorComputer": "Bacharelado em Ciência da Computação",
+      "IT technician": "Técnico em Informática",
+      "MyExperience": "Minha Experiência",
+      "TraineeDeveloper": "Desenvolvedor Trainee",
+      "JúniorDeveloper": "Desenvolvedor Júnior",
+      "DownloadCV": "Baixar CV",
+      "DescricaoFaculdade": "O curso de Ciência da Computação oferece uma base abrangente nos princípios de computação, programação e gestão de redes. Os alunos adquirem experiência prática em desenvolvimento de software, resolução de problemas de hardware, gestão de bancos de dados e suporte de TI.",
+      "DescricaoTecnico": "O curso de Técnico em Tecnologia da Informação é projetado para capacitar os alunos com habilidades essenciais em hardware de computador, software e sistemas de redes. Através de treinamento prático, os alunos aprendem a solucionar problemas e reparar computadores, instalar e configurar sistemas operacionais, e gerenciar redes. O curso abrange áreas como segurança cibernética, gestão de bancos de dados e suporte de TI, proporcionando uma base sólida para os alunos.",
+      "DescricaoTrainee": "Atualmente atuando como desenvolvedor trainee, sou responsável pela construção de aplicativos e softwares utilizando as linguagens PHP, C# e JavaScript. Tenho experiência em manipulação e integração com bancos de dados, além de utilizar ferramentas como o PHPMyAdmin para gerenciamento e administração de dados. ",
+      "DescricaoJunior": "Na SBR Prime, adquiri uma experiência diversificada em suporte técnico, design de sites e desenvolvimento júnior, incluindo atendimento ao cliente, testes manuais, testes automatizados com Cypress e desenvolvimento de novos sistemas e sites utilizando JavaScript e React. Contribuí para garantir a qualidade do produto e alinhar as soluções com as necessidades dos clientes."
+    },
+    "Projetos":{
+        "titulo": "Projetos",
+        "subtitulo": "Alguns dos meus projetos",
+        "categoria": "categoria",
+        "descricaoPortfolio": "Este projeto é um portfólio pessoal desenvolvido com React JS, HTML, CSS, JavaScript e Styled-Components, com o objetivo de exibir minhas habilidades e conhecimentos como desenvolvedor front-end. Além de apresentar meu currículo, o site destaca minhas competências em design e desenvolvimento, oferecendo uma navegação responsiva e uma apresentação clara dos meus projetos, experiências e habilidades. Repositório do GitHub https://github.com/Maicon-Tomasi/Portfolio",
+        "descricaoDesafioAlura": "O Desafio React - Alura foi desenvolvido para aprimorar meus conhecimentos em React.js, utilizando componentes funcionais, estados, efeitos e hooks personalizados. O projeto foi construído com React.js para criar interfaces dinâmicas e reutilizáveis, Vite para um ambiente de desenvolvimento rápido e eficiente, Styled Components para estilizar a aplicação diretamente com JavaScript, proporcionando uma manutenção facilitada e estilos dinâmicos, e Antd para implementar componentes de interface prontos para uso, seguindo as diretrizes de design do Ant Design. Repositório GitHub https://github.com/Maicon-Tomasi/DesafiosAlura/tree/main/challenge1"
+    }
+
   }
   

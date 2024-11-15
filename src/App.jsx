@@ -7,6 +7,7 @@ import OQueFaco from './components/OQueFaco';
 import Curriculo from './components/Curriculo';
 import Projetos from './components/Projetos';
 import Footer from './components/Footer';
+import ToTop from './components/Totop';
 
 const Container = styled.div`
   max-width: 1440px;
@@ -31,6 +32,7 @@ function App() {
         <Projetos />
       </Container>
       <Footer />
+      <ToTop />
     </div>
   )
 }

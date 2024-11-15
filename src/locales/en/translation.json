@@ -1,6 +1,86 @@
 {
     "developer": "HI, I'M A DEVELOPER",
     "location": "Based in Campo Grande - MS, Brazil",
-    "button": "View My Works"
-}
+    "button": "View My Works",
+    "informacoes": {
+      "name": "Name:",
+      "email": "Email:",
+      "birthdate": "Birthdate:",
+      "location": "I reside in:"
+    },
+    "spanValues": {
+      "name": "Maicon W. S. Tomasi",
+      "email": "maiconwstomasi@gmail.com",
+      "birthdate": "07/22/2005",
+      "location": "Campo Grande, MS"
+    },
+    "aboutMe": {
+    "title": "About Me",
+    "subtitle": "Know more about me",
+    "introduction": "Hi, I'm <span>{{name}}</span>",
+    "description": "Full Stack Developer at the beginning of my career, focused on JavaScript, React, TypeScript, and PHP. Currently in my third year of Computer Science, I have skills in developing web applications, as well as knowledge of SQL databases. I am continuously interested in improving my skills, especially in JavaScript and C#, technologies I have been exploring to expand my technical repertoire.",
+    "passion": "Although I have initial experience, I already develop functional solutions and am constantly seeking new challenges to grow as a professional. With a strong desire to learn and contribute to innovative projects, I am ready to collaborate on development teams, bringing value with my technical knowledge and willingness to grow.",
+    "yearsExperience": "Year of <b>Experience</b>"
+    },
+    "menu": {
+    "name": "Maicon Tomasi",
+    "phone": "(66) 99698-9912",
+    "home": "Home",
+    "aboutMe": "About me",
+    "whatIDo": "What I Do?",
+    "resume": "Resume",
+    "portfolio": "Projects",
+    "contact": "Contact"
+    },
+    "oQueFaco": {
+        "titulo": "What I Do?",
+        "subtitulo": "How I can help your next project",
+        "frontEnd": {
+            "titulo": "Front-End",
+            "texto": "Development of interactive and responsive interfaces using industry best practices."
+        },
+        "backEnd": {
+            "titulo": "Back-End",
+            "texto": "Building APIs and business logic for robust solutions."
+        },
+        "bancoDeDados": {
+            "titulo": "Database",
+            "texto": "Managing and designing efficient databases."
+        },
+        "fullStack": {
+            "titulo": "Full Stack",
+            "texto": "Complete integration of front-end and back-end in scalable systems."
+        },
+        "mobile": {
+            "titulo": "Mobile Development",
+            "texto": "Responsive and optimized applications for different devices."
+        },
+        "api": {
+            "titulo": "APIs",
+            "texto": "Development and integration of modern, scalable APIs."
+        }
+    },
+    "curriculo": {
+        "Resume": "Resume",
+        "Titulo": "A Summary of My Resume",
+        "MyEducation": "My Education",
+        "BachelorComputer": "Bachelor in Computer Science",
+        "IT technician": "IT technician",
+        "MyExperience": "My Experience",
+        "TraineeDeveloper": "Trainee Developer",
+        "JúniorDeveloper": "Junior Developer",
+        "DownloadCV": "Download CV",
+        "DescricaoFaculdade": "The Computer Science course provides a comprehensive foundation in the principles of computing, programming, and network management. Students gain practical experience with software development, hardware troubleshooting, database management, and IT support. ",
+        "DescricaoTecnico": "The Information Technology Technician course is designed to equip students with essential skills in computer hardware, software, and network systems.Through hands-on training, students learn to troubleshoot and repair computers, install and configure operating systems, and manage networks. The course covers areas such as cybersecurity, database management, and IT support, providing a solid foundation for students.",
+        "DescricaoTrainee": "Currently working as a trainee developer, I am responsible for building applications and software using PHP, C#, and JavaScript. I have experience in data manipulation and integration, as well as using tools like PHPMyAdmin for database management and administration. ",
+        "DescricaoJunior": "At SBR Prime, I gained diverse experience in technical support, web design, and junior development, including customer support, manual testing, automated testing with Cypress, and developing new systems and websites using JavaScript and React. I contributed to ensuring product quality and aligning solutions with client needs."
+    },
+    "Projetos":{
+        "titulo": "Projects",
+        "subtitulo": "Some of my recent projects",
+        "categoria": "category",
+        "descricaoPortfolio": "This project is a personal portfolio built with React JS, HTML, CSS, JavaScript, and Styled-Components, aimed at showcasing my skills and knowledge as a front-end developer. In addition to displaying my resume, the site highlights my design and development skills, offering responsive navigation and a clear presentation of my projects, experiences, and abilities. Repositório do GitHub https://github.com/Maicon-Tomasi/Portfolio",
+        "descricaoDesafioAlura": "The React Challenge - Alura was developed to enhance my skills in React.js, using functional components, states, effects, and custom hooks. The project was built with React.js to create dynamic and reusable interfaces, Vite for a fast and efficient development environment, Styled Components to style the application directly with JavaScript, providing easier maintenance and dynamic styles, and Antd to implement ready-to-use interface components, following the design guidelines of Ant Design. Repositório GitHub https://github.com/Maicon-Tomasi/DesafiosAlura/tree/main/challenge1"
+    }
+  }
   

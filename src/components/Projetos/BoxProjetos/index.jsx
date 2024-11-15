@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import styled from "styled-components";
 
 const DivBoxProjeto = styled.div`
@@ -133,6 +134,7 @@ const CloseButton = styled.button`
 
 const BoxProjetos = ({ icone, img, nomeCategoria, video, descricao, tecnologias }) => {
      const [openModal, setOpenModal] = useState(false);
+     const { t } = useTranslation();
 
      const handleModalClick = () => {
           setOpenModal(!openModal);
@@ -144,7 +146,7 @@ const BoxProjetos = ({ icone, img, nomeCategoria, video, descricao, tecnologias 
                     <DivOverlayProjeto onClick={handleModalClick}>
                          {icone}
                          <SpanNomeCategoria>{nomeCategoria}</SpanNomeCategoria>
-                         <span style={{ fontSize: '20px' }}>category</span>
+                         <span style={{ fontSize: '20px' }}>{t("Projetos.categoria")}</span>
                     </DivOverlayProjeto>
                     <img src={img} alt="" />
                </DivBoxProjeto>

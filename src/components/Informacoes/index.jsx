@@ -1,25 +1,26 @@
-import styled from "styled-components"
-import SpanInformacoes from "../SpanInformacoes"
+import styled from "styled-components";
+import SpanInformacoes from "../SpanInformacoes";
+import { useTranslation } from "react-i18next";
 
 const SectionInformacoesEstilizada = styled.section`
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 50px 0;
-    color: #212529;
-`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 50px 0;
+  color: #212529;
+`;
 
-const Informacoes = () =>{
+const Informacoes = () => {
+  const { t } = useTranslation(); // Hook para tradução
 
-    return(
-        <SectionInformacoesEstilizada>
-            <SpanInformacoes label="Nome:" span="Maicon W. S. Tomasi"/>
-            <SpanInformacoes label="Email:" span="maiconwstomasi@gmail.com"/>
-            <SpanInformacoes label="Email:" span="22/07/2005"/>
-            <SpanInformacoes label="Resido em:" span="Campo Grande, MS"/>
-        </SectionInformacoesEstilizada>
-    )
+  return (
+    <SectionInformacoesEstilizada>
+      <SpanInformacoes label={t("informacoes.name")} span={t("spanValues.name")} />
+      <SpanInformacoes label={t("informacoes.email")} span={t("spanValues.email")} />
+      <SpanInformacoes label={t("informacoes.birthdate")} span={t("spanValues.birthdate")} />
+      <SpanInformacoes label={t("informacoes.location")} span={t("spanValues.location")} />
+    </SectionInformacoesEstilizada>
+  );
+};
 
-}
-
-export default Informacoes
+export default Informacoes;
