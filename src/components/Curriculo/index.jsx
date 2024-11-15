@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import TituloSubtitulo from "../TItuloSubtitulo"
 import BoxInformacoes from "../BoxInfo";
 import Habilidades from "../Habilidades";
 import { useTranslation } from "react-i18next";
 import { Element } from "react-scroll";
+import TituloSubtitulo from "../TituloSubtitulo";
 
 const ContainerCurriculo = styled.div`
      display: flex;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import TituloSubtitulo from "../TituloSubtitulo";
 import { useTranslation } from "react-i18next";
 import { Element } from "react-scroll";
+import TituloSubtitulo from "../TituloSubtitulo";
 
 const DivInformacoes = styled.div`
   display: flex;

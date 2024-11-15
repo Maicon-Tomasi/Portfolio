@@ -1,10 +1,10 @@
 import { useState } from "react";
-import TituloSubtitulo from "../TituloSubtitulo";
 import styled from "styled-components";
 import BoxProjetos from "./BoxProjetos";
 import { FaCss3, FaHtml5, FaJs } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import { Element } from "react-scroll";
+import TituloSubtitulo from "../TituloSubtitulo";
 
 
 const DivFiltroProjetos = styled.div`
