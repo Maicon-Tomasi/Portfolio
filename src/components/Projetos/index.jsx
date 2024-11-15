@@ -83,8 +83,9 @@ const Projetos = () => {
 
 
             <DivGaleriaProjetos>
-                {arrayProjetos.map((projeto) => (
+                {arrayProjetos.map((projeto, index) => (
                     <BoxProjetos 
+                        key={index}
                         icone={projeto.icone} 
                         nomeCategoria={projeto.nomeCategoria} 
                         img={projeto.img}
