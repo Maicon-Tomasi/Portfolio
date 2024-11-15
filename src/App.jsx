@@ -30,6 +30,7 @@ function App() {
         <Curriculo />
         <Projetos />
       </Container>
+      <Footer />
     </div>
   )
 }
