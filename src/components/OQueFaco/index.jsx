@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import TituloSubtitulo from "../TituloSubtitulo";
+import TituloSubtitulo from "../TituloSubtitulo_temp";
 import styled from "styled-components";
 import {
     FaCss3,
