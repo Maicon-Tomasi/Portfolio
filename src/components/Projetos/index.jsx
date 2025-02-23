@@ -2,6 +2,7 @@ import { useState } from "react";
 import styled from "styled-components";
 import BoxProjetos from "./BoxProjetos";
 import { FaCss3 } from "react-icons/fa";
+import { FaDatabase } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
 import { Element } from "react-scroll";
 import TituloSubtitulo from "../TituloSubtitulo_temp";
@@ -62,6 +63,13 @@ const Projetos = () => {
             img: "/imagesProjetos/AluraDevs.png",
             video: "/videos/desafioAlura.mp4",
             descricao: t("Projetos.descricaoDesafioAlura"),
+        },
+        {
+            icone: <FaDatabase size={50} color="aqua" />, 
+            nomeCategoria:"Back-End", 
+            img: "/imagesProjetos/FotoAplicativoConsole.jpg",
+            video: "/videos/ControleDeEstoque-aplicativoConsole.mp4",
+            descricao: t("Projetos.descricaoAplicativoConsole"),
         }
     ]
 
