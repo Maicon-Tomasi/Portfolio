@@ -11,6 +11,9 @@ import {
 } from "react-icons/fa";
 import CardOqueFaco from "../CardOqueFaco";
 import { Element } from "react-scroll";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const ContainerOQueFaco = styled.div`
     display: flex;
@@ -25,13 +28,24 @@ const ContainerOQueFaco = styled.div`
 const OQueFaco = () => {
     const { t } = useTranslation();
 
+    useEffect(() => {
+          AOS.init({
+               duration: 2000,
+               once: true,
+               easing: 'ease-in-out',
+          });
+     }, []);
+
+
     return (
         <Element name="oquefaco">
             {/* Componente de título e subtítulo da seção */}
-            <TituloSubtitulo
-                titulo={t("oQueFaco.titulo")}
-                subtitulo={t("oQueFaco.subtitulo")}
-            />
+            <div data-aos="fade-up">
+                <TituloSubtitulo
+                    titulo={t("oQueFaco.titulo")}
+                    subtitulo={t("oQueFaco.subtitulo")}
+                />
+            </div>
 
             {/* Contêiner principal para os cartões */}
             <ContainerOQueFaco>

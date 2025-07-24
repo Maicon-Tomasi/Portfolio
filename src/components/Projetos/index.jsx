@@ -65,11 +65,18 @@ const Projetos = () => {
             descricao: t("Projetos.descricaoDesafioAlura"),
         },
         {
+            icone: <FaCss3 size={50} color="aqua" />, 
+            nomeCategoria:"Front-End", 
+            img: "/imagesProjetos/capaProjetoSite.png",
+            video: "/videos/VideoSiteMaeDesktop.mp4",
+            descricao: t("Projetos.descricaoSistePsicologa"),
+        },
+        {
             icone: <FaDatabase size={50} color="aqua" />, 
-            nomeCategoria:"Back-End", 
-            img: "/imagesProjetos/FotoAplicativoConsole.jpg",
-            video: "/videos/ControleDeEstoque-aplicativoConsole.mp4",
-            descricao: t("Projetos.descricaoAplicativoConsole"),
+            nomeCategoria:"Full-Stack", 
+            img: "/imagesProjetos/capaSistemaAgeAgendamento.png",
+            video: "/videos/VideoSistemaAgendamentos.mp4",
+            descricao: t("Projetos.descricaoSistemaPsicologa"),
         }
     ]
 

@@ -2,6 +2,9 @@ import styled from "styled-components";
 import { useTranslation } from "react-i18next";
 import { Element } from "react-scroll";
 import TituloSubtitulo from "../TituloSubtitulo_temp";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const DivInformacoes = styled.div`
   display: flex;
@@ -72,22 +75,37 @@ const SpanAnosExperiencia = styled.span`
 const SobreMim = () => {
   const { t } = useTranslation(); // Hook para tradução
 
+  useEffect(() => {
+        AOS.init({
+            duration: 1000,
+            once: true,
+            easing: 'ease-in-out',
+        });
+  }, []);
+
   return (
     <Element name="sobremim">
-      <TituloSubtitulo titulo={t("aboutMe.title")} subtitulo={t("aboutMe.subtitle")} />
+      <div data-aos="fade-up">
+        <TituloSubtitulo titulo={t("aboutMe.title")} subtitulo={t("aboutMe.subtitle")} />
+      </div>
 
       <DivInformacoes>
-        <DivTexto>
-          <h2 dangerouslySetInnerHTML={{ __html: t("aboutMe.introduction", { name: "Maicon Tomasi" }) }} />
-          <p>{t("aboutMe.description")}</p>
-          <p>{t("aboutMe.passion")}</p>
-        </DivTexto>
+        <div data-aos="fade-right">
+          <DivTexto>
+            <h2 dangerouslySetInnerHTML={{ __html: t("aboutMe.introduction", { name: "Maicon Tomasi" }) }} />
+            <p>{t("aboutMe.description")}</p>
+            <p>{t("aboutMe.passion")}</p>
+          </DivTexto>
+        </div>
 
-        <DivExperiencia>
-          <SpanNumero>01</SpanNumero>
-          <SpanAnosExperiencia dangerouslySetInnerHTML={{ __html: t("aboutMe.yearsExperience") }} />
-        </DivExperiencia>
+        <div data-aos="zoom-in">
+          <DivExperiencia>
+            <SpanNumero>01</SpanNumero>
+            <SpanAnosExperiencia dangerouslySetInnerHTML={{ __html: t("aboutMe.yearsExperience") }} />
+          </DivExperiencia>
+        </div>
       </DivInformacoes>
+
     </Element>
   );
 };

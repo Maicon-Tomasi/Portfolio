@@ -1,4 +1,7 @@
+import { useEffect } from "react";
 import styled from "styled-components"
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const DivInfo = styled.div`
     display: flex;
@@ -21,11 +24,23 @@ const DivInfo = styled.div`
 `
 
 const SpanInformacoes = ({label, span}) =>{
+
+    useEffect(() => {
+          AOS.init({
+               duration: 1000,
+               once: true,
+               easing: 'ease-in-out',
+          });
+     }, []);
+
+
     return(
-        <DivInfo>
-            <label>{label}</label>
-            <span>{span}</span>
-        </DivInfo>
+        <div data-aos="zoom-in">
+            <DivInfo>
+                <label>{label}</label>
+                <span>{span}</span>
+            </DivInfo>
+        </div>
     )
 }
 

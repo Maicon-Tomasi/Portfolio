@@ -16,9 +16,9 @@ const Informacoes = () => {
   return (
     <SectionInformacoesEstilizada>
       <SpanInformacoes label={t("informacoes.name")} span={t("spanValues.name")} />
-      <SpanInformacoes label={t("informacoes.email")} span={t("spanValues.email")} />
       <SpanInformacoes label={t("informacoes.birthdate")} span={t("spanValues.birthdate")} />
       <SpanInformacoes label={t("informacoes.location")} span={t("spanValues.location")} />
+      <SpanInformacoes label={t("informacoes.email")} span={t("spanValues.email")} />
     </SectionInformacoesEstilizada>
   );
 };

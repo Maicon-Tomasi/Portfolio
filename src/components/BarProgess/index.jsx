@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 const BoxProgresEstilizado = styled.div`
     width: 100%;
@@ -46,15 +49,25 @@ const ProgressEstilizado = styled.progress`
 `;
 
 
-const BoxProgres = ({skill, porcentagem, value}) => {
+const BoxProgres = ({skill, porcentagem, value, delay}) => {
+
+    useEffect(() => {
+          AOS.init({
+               duration: 2000,
+               once: true,
+               easing: 'ease-in-out',
+          });
+     }, []);
 
     return(
         <BoxProgresEstilizado>
-            <div style={{display: 'flex', justifyContent: 'space-between'}}>
+            <div data-aos="fade-up" data-aos-delay={delay} style={{display: 'flex', justifyContent: 'space-between'}}>
                 <span>{skill}</span>
                 <span>{porcentagem}</span>
             </div>
-            <ProgressEstilizado value={value} max={100}/>
+            <div data-aos="fade-up" data-aos-delay={delay}>
+                <ProgressEstilizado value={value} max={100}/>
+            </div>
         </BoxProgresEstilizado>
     )
 

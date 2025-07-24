@@ -1,4 +1,7 @@
 import styled from "styled-components";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 
 const DivCard = styled.div`
@@ -24,13 +27,24 @@ const DivCard = styled.div`
 
 const CardOqueFaco = ({icone, titulo, texto}) =>{
 
+     useEffect(() => {
+          AOS.init({
+               duration: 500,
+               once: true,
+               easing: 'ease-in-out',
+          });
+     }, []);
+
+
      return(
-          <DivCard>
-               {icone}
-               
-               <h3>{titulo}</h3>
-               <p>{texto}</p>
-          </DivCard>
+          <div data-aos="fade-up">
+               <DivCard>
+                    {icone}
+                    
+                    <h3>{titulo}</h3>
+                    <p>{texto}</p>
+               </DivCard>
+          </div>
      )
 
 }

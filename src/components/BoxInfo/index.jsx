@@ -6,20 +6,20 @@ const BoxInfo = styled.div`
      margin-bottom: 15px;
 
      span{
-          font-size: 26px;
+          font-size: 22px;
           font-weight: 500;
           margin-bottom: -5px;
      }
 
      p:first-of-type {
-          font-size: 20px;
+          font-size: 17px;
           font-weight: 400;
           color: #212529;
           margin-bottom: 20px;
      }
 
      p:last-of-type {
-          font-size: 20px;
+          font-size: 17px;
           font-weight: 400;
           color: #8e9a9d;
           margin-top: 0;
